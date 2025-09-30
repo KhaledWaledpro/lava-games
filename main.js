@@ -16,7 +16,7 @@ document.getElementById("search").addEventListener("keyup", function() {
 
 async function loadGames() {
   try {
-    const res = await fetch("https://feeds.gamepix.com/v2/json?sid=27XLX&order=pubdate&pagination=96&page=1");
+    const res = await fetch("https://feeds.gamepix.com/v2/json?sid=SAA15&order=pubdate&pagination=96&page=1");
     const data = await res.json();
 
     const container = document.getElementById("games");
@@ -59,4 +59,5 @@ async function loadGames() {
 }
 
 loadGames();
+
 
